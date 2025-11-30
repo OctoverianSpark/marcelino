@@ -52,7 +52,7 @@ export default function RootLayout ({
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="https://wa.me/message/5RGE7TQAJ6B7C1"
                   aria-label="WhatsApp"
                 >
                   <Button 
@@ -82,7 +82,7 @@ export default function RootLayout ({
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/share/161aUSCjYi/"
                   aria-label="Facebook"
                   className={
                     "size-12 rounded-full"

@@ -21,7 +21,7 @@ export default function Home () {
   const references = [
     {
       points: 5,
-      name: 'Annarys',
+      name: 'Danny',
       comments: 'Increible, un servicio impecable',
       img: '/users/user-1.jpg' // Cambiado: sin ./ ni assets
     },

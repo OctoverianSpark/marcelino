@@ -54,6 +54,8 @@ export default function RootLayout ({
                 <Link
                   href="https://wa.me/message/5RGE7TQAJ6B7C1"
                   aria-label="WhatsApp"
+                  target='_blank'
+
                 >
                   <Button 
                   variant={'ghost'} 
@@ -87,6 +89,7 @@ export default function RootLayout ({
                   className={
                     "size-12 rounded-full"
                   }
+                  target='_blank'
                 >
                   <Button 
                   variant={'ghost'} 

@@ -89,7 +89,7 @@ export default function RootLayout ({
       ]
     })
   }}
-/>
+/><meta name="google-site-verification" content="x64OtUOR0lDuE3C5IXhc2dH8YLL6yhvApwzPHLpNDY8" />
 
       </head>
 

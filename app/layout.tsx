@@ -17,9 +17,54 @@ const geistMono = Geist_Mono({
   subsets: ['latin']
 })
 
+
 export const metadata: Metadata = {
-  title: 'Marcelino',
-  description: "Hello I'm Marcelino"
+  title: {
+    default: 'Marcelino | Tarot y Astrología Espiritual',
+    template: '%s | Marcelino Tarot'
+  },
+  description:
+    'Lecturas de tarot y astrología personalizadas. Encuentra claridad, propósito y guía espiritual con Marcelino.',
+  keywords: [
+    'tarot',
+    'astrología',
+    'lectura de tarot',
+    'guía espiritual',
+    'horóscopo',
+    'tarot online',
+    'astrología espiritual'
+  ],
+  authors: [{ name: 'Marcelino' }],
+  creator: 'Marcelino',
+  metadataBase: new URL('https://soymarcelino.vercel.app'), // CAMBIA ESTO
+  openGraph: {
+    title: 'Marcelino | Tarot y Astrología Espiritual',
+    description:
+      'Guía espiritual a través del tarot y la astrología. Lecturas claras, profundas y personalizadas.',
+    url: 'https://soymarcelino.vercel.app',
+    siteName: 'Marcelino Tarot',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Marcelino - Tarot y Astrología'
+      }
+    ],
+    locale: 'es_ES',
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Marcelino | Tarot y Astrología Espiritual',
+    description:
+      'Lecturas espirituales que te ayudan a encontrar claridad y equilibrio.',
+    images: ['/og-image.jpg']
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
 }
 
 export default function RootLayout ({
@@ -29,6 +74,24 @@ export default function RootLayout ({
 }>) {
   return (
     <html lang='es'>
+      <head>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: 'Marcelino',
+      jobTitle: 'Guía espiritual',
+      url: 'https://soymarcelino.vercel.app',
+      sameAs: [
+        "https://www.facebook.com/share/161aUSCjYi/"
+      ]
+    })
+  }}
+/>
+
+      </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
